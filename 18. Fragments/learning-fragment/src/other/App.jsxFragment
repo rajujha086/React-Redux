@@ -1,0 +1,34 @@
+import React from "react";
+import "./App.css";
+
+function App() {
+  return (
+    //  Fragments Full code
+    // <React.Fragment>
+    //   <h1>Healthy Food</h1>
+    //   <ul class="list-group">
+    //     <li class="list-group-item">Dal</li>
+    //     <li class="list-group-item">Green Vegatable</li>
+    //     <li class="list-group-item">Roti</li>
+    //     <li class="list-group-item">Salad</li>
+    //     <li class="list-group-item">Milk</li>
+    //   </ul>
+    // </React.Fragment>
+
+    //  Fragments short code
+    <>
+      <h1>Healthy Food</h1>
+      <ul class="list-group">
+        <li class="list-group-item">Dal</li>
+        <li class="list-group-item">Green Vegatable</li>
+        <li class="list-group-item">Roti</li>
+        <li class="list-group-item">Salad</li>
+        <li class="list-group-item">Milk</li>
+      </ul>
+    </>
+  );
+}
+
+export default App;
+
+1244273893;

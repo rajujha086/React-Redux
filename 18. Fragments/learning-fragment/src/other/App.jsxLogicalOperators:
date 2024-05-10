@@ -1,0 +1,40 @@
+import React from "react";
+import "./App.css";
+
+function App() {
+  // Map Method
+  // let foodItems = [];
+  let foodItems = ["Dal", "Green Vegatable", "Roti", "Salad", "Milk", "Ghee"];
+
+  // Conditional Rendering
+  // if (foodItems.length === 0) {
+  //   return <h3>I am still hungry.</h3>;
+  // }
+
+  // let emptyMessage =
+  //   foodItems.length === 0 ? <h3>I am still hungry.</h3> : null;
+
+  return (
+    // Map Method
+    <>
+      <h1>Healthy Food</h1>
+
+      {/* Ternary operators */}
+      {/* {foodItems.length === 0 ? <h3>I am still hungry.</h3> : null} */}
+      {/* {emptyMessage} */}
+
+      {/* Logical operators */}
+      {foodItems.length === 0 && <h3>I am still hungry.</h3>}
+
+      <ul className="list-group">
+        {foodItems.map((item) => (
+          <li key={item} className="list-group-item">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default App;
